@@ -40,6 +40,7 @@
     "auto-changelog": "https://git@github.com/mansona/auto-changelog.git#epic",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
+    "calculate-cache-key-for-tree": "^2.0.0",
     "ember-auto-import": "^2.2.3",
     "ember-cli": "~3.28.2",
     "ember-cli-dependency-checker": "^3.2.0",

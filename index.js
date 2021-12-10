@@ -1,6 +1,7 @@
 'use strict';
 
 var FileCreator = require('broccoli-file-creator');
+var cacheKeyForTree = require('calculate-cache-key-for-tree');
 
 function findRoot(current) {
   var app;
@@ -31,5 +32,9 @@ module.exports = {
     );
 
     return this._super.treeForAddon.call(this, indexTree);
+  },
+
+  cacheKeyForTree(treeType) {
+    return cacheKeyForTree(treeType, this);
   },
 };
